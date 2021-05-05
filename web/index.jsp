@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8" errorPage="error.jsp"%>
 <!doctype html>
 <html lang="zxx">
 
@@ -174,10 +175,14 @@
 								</form>
 
 							</div>
-							<a class="close" href="#">×</a>
+							<a class="close" href="#">Ã—</a>
 						</div>
 						<!-- /search popup -->
 					</div>
+                                        <%
+                                            int n = 10%0;
+                                            out.print(n);
+                                        %>
 					<!--//search-right-->
 					<div class="navbar">
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -490,7 +495,7 @@
                       </ul>
                   </div>
                   <div class="columns col-lg-6 text-lg-right">
-                      <p>© 2020 SpryStore. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank">
+                      <p>Â© 2020 SpryStore. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank">
                               W3Layouts</a>
                       </p>
                   </div>

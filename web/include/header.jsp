@@ -2,6 +2,7 @@
 Author: W3layouts
 Author URL: http://w3layouts.com
 -->
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="zxx">
 
@@ -140,7 +141,7 @@ Author URL: http://w3layouts.com
 
                                         </div>
 
-                                        <a class="close" href="#">×</a>
+                                        <a class="close" href="#">Ã—</a>
                                     </div>
                                     <!-- /search popup -->
                                 </div>
