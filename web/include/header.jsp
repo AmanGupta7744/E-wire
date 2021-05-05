@@ -10,7 +10,9 @@ Author URL: http://w3layouts.com
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>New Title</title>
+        <title>
+            <%= request.getAttribute("title")%>
+        </title>
         <!-- Template CSS -->
         <link rel="stylesheet" href="assets/css/style-starter.css">
         <!-- Template CSS -->
@@ -154,16 +156,16 @@ Author URL: http://w3layouts.com
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.jsp">Home</a>
+                                            <a class="nav-link" href="${pageContext.request.contextPath}\home?page=home">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">About</a>
+                                            <a class="nav-link" href="${pageContext.request.contextPath}\view?page=about">About</a>
                                         </li>
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="contact.jsp">Contact</a>
+                                            <a class="nav-link" href="${pageContext.request.contextPath}\view?page=contact">Contact</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="faq.jsp">Faq's</a>
+                                            <a class="nav-link" href="${pageContext.request.contextPath}\view?page=faq">Faq's</a>
                                         </li>
                                     </ul>
 
@@ -175,11 +177,11 @@ Author URL: http://w3layouts.com
                     <div class="breadcrumb-contentnhy">
                         <div class="container">
                             <nav aria-label="breadcrumb">
-                                <h2 class="hny-title text-center">Title</h2>
+                                <h2 class="hny-title text-center"><%= request.getAttribute("title")%></h2>
                                 <ol class="breadcrumb mb-0">
                                     <li><a href="index.jsp">Home</a>
                                         <span class="fa fa-angle-double-right"></span></li>
-                                    <li class="active">new Title</li>
+                                    <li class="active"><%= request.getAttribute("title")%></li>
                                 </ol>
                             </nav>
                         </div>

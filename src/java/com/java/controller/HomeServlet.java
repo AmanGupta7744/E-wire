@@ -7,6 +7,9 @@ package com.java.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,8 +26,15 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-    
-        
+           String page = request.getParameter("page");
+           page = page.toLowerCase();
+           switch(page){
+               case "home":
+                   home(request,response);
+                   break;         
+            default:
+                   error(request,response);
+          }
             
     }
 
@@ -36,6 +46,24 @@ public class HomeServlet extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }// </editor-fold> 
+
+    private void home(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
+            requestDispatcher.forward(request,response);
+        } catch (ServletException | IOException ex) {
+            Logger.getLogger(HomeServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    private void error(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("error.jsp");
+            requestDispatcher.forward(request,response);
+        } catch (ServletException | IOException ex) {
+            Logger.getLogger(HomeServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
 }

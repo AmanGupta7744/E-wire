@@ -153,7 +153,7 @@
 			<!--/nav-->
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid serarc-fluid">
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="${pageContext.request.contextPath}\home?page=home">
 						Hari<span class="lohny">Om</span></a>
 					<!-- if logo is image enable this   
 							<a class="navbar-brand" href="#index.html">
@@ -179,10 +179,6 @@
 						</div>
 						<!-- /search popup -->
 					</div>
-                                        <%
-                                            int n = 10%0;
-                                            out.print(n);
-                                        %>
 					<!--//search-right-->
 					<div class="navbar">
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -193,19 +189,19 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.jsp">Home</a>
+								<a class="nav-link" href="${pageContext.request.contextPath}\home?page=home">Home</a>
 							</li>
 							<li class="nav-item active">
 								<a class="nav-link" href="#Products-display">Products</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="about.jsp">About</a>
+								<a class="nav-link" href="${pageContext.request.contextPath}\view?page=about">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="contact.jsp">Contact</a>
+								<a class="nav-link" href="${pageContext.request.contextPath}\view?page=contact">Contact</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="faq.jsp">FAQ's</a>
+								<a class="nav-link" href="${pageContext.request.contextPath}\view?page=faq">FAQ's</a>
 							  </li>
 						</ul>
 					</div>
