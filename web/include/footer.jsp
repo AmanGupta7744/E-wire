@@ -1,555 +1,202 @@
-<!-- footer -->
-	<footer>
-		<div class="footer-top-first">
-			<div class="container py-md-5 py-sm-4 py-3">
-				<!-- footer first section -->
-				<h2 class="footer-top-head-w3l font-weight-bold mb-2">Electronics :</h2>
-				<p class="footer-main mb-4">
-					If you're considering a new laptop, looking for a powerful new car stereo or shopping for a new HDTV, we make it easy to
-					find exactly what you need at a price you can afford. We offer Every Day Low Prices on TVs, laptops, cell phones, tablets
-					and iPads, video games, desktop computers, cameras and camcorders, audio, video and more.</p>
-				<!-- //footer first section -->
-				<!-- footer second section -->
-				<div class="row w3l-grids-footer border-top border-bottom py-sm-4 py-3">
-					<div class="col-md-4 offer-footer">
-						<div class="row">
-							<div class="col-4 icon-fot">
-								<i class="fas fa-dolly"></i>
-							</div>
-							<div class="col-8 text-form-footer">
-								<h3>Free Shipping</h3>
-								<p>on orders over $100</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 offer-footer my-md-0 my-4">
-						<div class="row">
-							<div class="col-4 icon-fot">
-								<i class="fas fa-shipping-fast"></i>
-							</div>
-							<div class="col-8 text-form-footer">
-								<h3>Fast Delivery</h3>
-								<p>World Wide</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 offer-footer">
-						<div class="row">
-							<div class="col-4 icon-fot">
-								<i class="far fa-thumbs-up"></i>
-							</div>
-							<div class="col-8 text-form-footer">
-								<h3>Big Choice</h3>
-								<p>of Products</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- //footer second section -->
-			</div>
-		</div>
-		<!-- footer third section -->
-		<div class="w3l-middlefooter-sec">
-			<div class="container py-md-5 py-sm-4 py-3">
-				<div class="row footer-info w3-agileits-info">
-					<!-- footer categories -->
-					<div class="col-md-3 col-sm-6 footer-grids">
-						<h3 class="text-white font-weight-bold mb-3">Categories</h3>
-						<ul>
-							<li class="mb-3">
-								<a href="product.html">Mobiles </a>
-							</li>
-							<li class="mb-3">
-								<a href="product.html">Computers</a>
-							</li>
-							<li class="mb-3">
-								<a href="product.html">TV, Audio</a>
-							</li>
-							<li class="mb-3">
-								<a href="product2.html">Smartphones</a>
-							</li>
-							<li class="mb-3">
-								<a href="product.html">Washing Machines</a>
-							</li>
-							<li>
-								<a href="product2.html">Refrigerators</a>
-							</li>
-						</ul>
-					</div>
-					<!-- //footer categories -->
-					<!-- quick links -->
-					<div class="col-md-3 col-sm-6 footer-grids mt-sm-0 mt-4">
-						<h3 class="text-white font-weight-bold mb-3">Quick Links</h3>
-						<ul>
-							<li class="mb-3">
-								<a href="about.html">About Us</a>
-							</li>
-							<li class="mb-3">
-								<a href="contact.html">Contact Us</a>
-							</li>
-							<li class="mb-3">
-								<a href="help.html">Help</a>
-							</li>
-							<li class="mb-3">
-								<a href="faqs.html">Faqs</a>
-							</li>
-							<li class="mb-3">
-								<a href="terms.html">Terms of use</a>
-							</li>
-							<li>
-								<a href="privacy.html">Privacy Policy</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-6 footer-grids mt-md-0 mt-4">
-						<h3 class="text-white font-weight-bold mb-3">Get in Touch</h3>
-						<ul>
-							<li class="mb-3">
-								<i class="fas fa-map-marker"></i> 123 Sebastian, USA.</li>
-							<li class="mb-3">
-								<i class="fas fa-mobile"></i> 333 222 3333 </li>
-							<li class="mb-3">
-								<i class="fas fa-phone"></i> +222 11 4444 </li>
-							<li class="mb-3">
-								<i class="fas fa-envelope-open"></i>
-								<a href="mailto:example@mail.com"> mail 1@example.com</a>
-							</li>
-							<li>
-								<i class="fas fa-envelope-open"></i>
-								<a href="mailto:example@mail.com"> mail 2@example.com</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-3 col-sm-6 footer-grids w3l-agileits mt-md-0 mt-4">
-						<!-- newsletter -->
-						<h3 class="text-white font-weight-bold mb-3">Newsletter</h3>
-						<p class="mb-3">Free Delivery on your first order!</p>
-						<form action="#" method="post">
-							<div class="form-group">
-								<input type="email" class="form-control" placeholder="Email" name="email" required="">
-								<input type="submit" value="Go">
-							</div>
-						</form>
-						<!-- //newsletter -->
-						<!-- social icons -->
-						<div class="footer-grids  w3l-socialmk mt-3">
-							<h3 class="text-white font-weight-bold mb-3">Follow Us on</h3>
-							<div class="social">
-								<ul>
-									<li>
-										<a class="icon fb" href="#">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a class="icon tw" href="#">
-											<i class="fab fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-										<a class="icon gp" href="#">
-											<i class="fab fa-google-plus-g"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- //social icons -->
-					</div>
-				</div>
-				<!-- //quick links -->
-			</div>
-		</div>
-		<!-- //footer third section -->
 
-		<!-- footer fourth section -->
-		<div class="agile-sometext py-md-5 py-sm-4 py-3">
-			<div class="container">
-				<!-- brands -->
-				<div class="sub-some">
-					<h5 class="font-weight-bold mb-2">Mobile & Tablets :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Android Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Smartphones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Feature Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Unboxed Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Refurbished Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2"> Tablets</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">CDMA Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Value Added Services</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Sell Old</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Used Mobiles</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">Computers :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Laptops </a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Printers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Routers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Ink & Toner Cartridges</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Monitors</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Video Games</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Unboxed & Refurbished Laptops</a>
-						</li>
-						<li>
-							<a href="product.html" class="border-right pr-2">Assembled Desktops</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Data Cards</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">TV, Audio & Large Appliances :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">TVs & DTH</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Home Theatre Systems</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Hidden Cameras & CCTVs</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Refrigerators</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Washing Machines</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Air Conditioners</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Cameras</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Speakers</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">Mobile & Laptop Accessories :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Headphones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Power Banks </a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Backpacks</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Mobile Cases & Covers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Pen Drives</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">External Hard Disks</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Mouse</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Smart Watches & Fitness Bands</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">MicroSD Cards</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">Appliances :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Trimmers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Hair Dryers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Emergency Lights</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Water Purifiers </a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Electric Kettles</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Hair Straighteners</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Induction Cooktops</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Sewing Machines</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Geysers</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">Popular on Electro Store</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Offers & Coupons</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Couple Watches</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Gas Stoves</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Air Coolers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Air Purifiers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Headphones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Headsets</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Pressure Cookers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Sandwich Makers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Air Friers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Irons</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">LED TV</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Sandwich Makers</a>
-						</li>
-					</ul>
-				</div>
-				<!-- //brands -->
-				<!-- payment -->
-				<div class="sub-some child-momu mt-4">
-					<h5 class="font-weight-bold mb-3">Payment Method</h5>
-					<ul>
-						<li>
-							<img src="assets/images/pay2.png" alt="">
-						</li>
-						<li>
-							<img src="assets/images/pay5.png" alt="">
-						</li>
-						<li>
-							<img src="assets/images/pay1.png" alt="">
-						</li>
-						<li>
-							<img src="assets/images/pay4.png" alt="">
-						</li>
-						<li>
-							<img src="assets/images/pay6.png" alt="">
-						</li>
-						<li>
-							<img src="assets/images/pay3.png" alt="">
-						</li>
-						<li>
-							<img src="assets/images/pay7.png" alt="">
-						</li>
-						<li>
-							<img src="assets/images/pay8.png" alt="">
-						</li>
-						<li>
-							<img src="assets/images/pay9.png" alt="">
-						</li>
-					</ul>
-				</div>
-				<!-- //payment -->
-			</div>
-		</div>
-		<!-- //footer fourth section (text) -->
-	</footer>
-	<!-- //footer -->
-	<!-- copyright -->
-	<div class="copy-right py-3">
-		<div class="container">
-			<p class="text-center text-white">© 2018 e-wire Store.</p>
-		</div>
-	</div>
-	<!-- //copyright -->
 
-	<!-- js-files -->
-	<!-- jquery -->
-	<script src="assets/js/jquery-2.2.3.min.js"></script>
-	<!-- //jquery -->
+  <section class="w3l-footer-22">
+      <!-- footer-22 -->
+      <div class="footer-hny py-5">
+          <div class="container py-lg-5">
+              <div class="text-txt row">
+                  <div class="left-side col-lg-4">
+                      <h3><a class="logo-footer" href="index.html">
+                            Spry<span class="lohny">S</span>tore</a></h3>
+                      <!-- if logo is image enable this   
+                                    <a class="navbar-brand" href="#index.html">
+                                        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                                    </a> -->
+                      <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur.Vivamus
+                          a ligula quam. Ut blandit eu leo non suscipit. </p>
+                      <ul class="social-footerhny mt-lg-5 mt-4">
 
-	<!-- nav smooth scroll -->
-	<script>
+                          <li><a class="facebook" href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                          </li>
+                          <li><a class="twitter" href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                          </li>
+                          <li><a class="google" href="#"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                          </li>
+                          <li><a class="instagram" href="#"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="right-side col-lg-8 pl-lg-5">
+                      <h4>Women's Day Special Offer
+                        All Branded Sandals are Flat 50% Discount</h4>
+                      <div class="sub-columns">
+                          <div class="sub-one-left">
+                              <h6>Useful Links</h6>
+                              <div class="footer-hny-ul">
+                                  <ul>
+                                      <li><a href="index.html">Home</a></li>
+                                      <li><a href="about.html">About</a></li>
+                                      <li><a href="#">Blog</a></li>
+                                      <li><a href="contact.html">Contact</a></li>
+                                  </ul>
+                                  <ul>
+                                      <li><a href="#">Careers</a></li>
+                                      <li><a href="#">Privacy Policy</a></li>
+                                      <li><a href="#">Terms and Conditions</a></li>
+                                      <li><a href="contact.html">Support</a></li>
+                                  </ul>
+                              </div>
+
+                          </div>
+                          <div class="sub-two-right">
+                              <h6>Our Store</h6>
+                              <p class="mb-5">49436 Broaddus Honey Court Avenue, Madisonville KY 95020, United States of America</p>
+
+                              <h6>We accept:</h6>
+                              <ul>
+                                  <li><a class="pay-method" href="#"><span class="fa fa-cc-visa"
+                                              aria-hidden="true"></span></a>
+                                  </li>
+                                  <li><a class="pay-method" href="#"><span class="fa fa-cc-mastercard"
+                                              aria-hidden="true"></span></a>
+                                  </li>
+                                  <li><a class="pay-method" href="#"><span class="fa fa-cc-paypal"
+                                              aria-hidden="true"></span></a>
+                                  </li>
+                                  <li><a class="pay-method" href="#"><span class="fa fa-cc-amex"
+                                              aria-hidden="true"></span></a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="below-section row">
+                  <div class="columns col-lg-6">
+                      <ul class="jst-link">
+                          <li><a href="#">Privacy Policy </a> </li>
+                          <li><a href="#">Term of Service</a></li>
+                          <li><a href="contact.html">Customer Care</a> </li>
+                      </ul>
+                  </div>
+                  <div class="columns col-lg-6 text-lg-right">
+                      <p>© 2020 SpryStore. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank">
+                              W3Layouts</a>
+                      </p>
+                  </div>
+                  <button onclick="topFunction()" id="movetop" title="Go to top">
+                      <span class="fa fa-angle-double-up"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+      <!-- //titels-5 -->
+      <!-- move top -->
+
+      <script>
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () {
+              scrollFunction()
+          };
+
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("movetop").style.display = "block";
+              } else {
+                  document.getElementById("movetop").style.display = "none";
+              }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }
+      </script>
+      <!-- /move top -->
+  </section>
+
+
+  </body>
+
+  </html>
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<!--/login-->
+<script>
 		$(document).ready(function () {
-			$(".dropdown").hover(
-				function () {
-					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
-					$(this).toggleClass('open');
-				},
-				function () {
-					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
-					$(this).toggleClass('open');
+			$(".button-log a").click(function () {
+				$(".overlay-login").fadeToggle(200);
+				$(this).toggleClass('btn-open').toggleClass('btn-close');
+			});
+		});
+		$('.overlay-close1').on('click', function () {
+			$(".overlay-login").fadeToggle(200);
+			$(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+			open = false;
+		});
+  </script>
+<!--//login-->
+<script>
+// optional
+		$('#customerhnyCarousel').carousel({
+				interval: 5000
+    });
+  </script>
+ <!-- cart-js -->
+ <script src="assets/js/minicart.js"></script>
+ <script>
+     transmitv.render();
+
+     transmitv.cart.on('transmitv_checkout', function (evt) {
+         var items, len, i;
+
+         if (this.subtotal() > 0) {
+             items = this.items();
+
+             for (i = 0, len = items.length; i < len; i++) {}
+         }
+     });
+ </script>
+ <!-- //cart-js -->
+
+<!-- disable body scroll which navbar is in active -->
+
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+
+
+<!-- script for tabs -->
+	<script>
+		$(function () {
+
+			var menu_ul = $('.faq > li > ul'),
+				menu_a = $('.faq > li > a');
+
+			menu_ul.hide();
+
+			menu_a.click(function (e) {
+				e.preventDefault();
+				if (!$(this).hasClass('active')) {
+					menu_a.removeClass('active');
+					menu_ul.filter(':visible').slideUp('normal');
+					$(this).addClass('active').next().stop(true, true).slideDown('normal');
+				} else {
+					$(this).removeClass('active');
+					$(this).next().stop(true, true).slideUp('normal');
 				}
-			);
-		});
-	</script>
-	<!-- //nav smooth scroll -->
-
-	<!-- popup modal (for location)-->
-	<script src="assets/js/jquery.magnific-popup.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.popup-with-zoom-anim').magnificPopup({
-				type: 'inline',
-				fixedContentPos: false,
-				fixedBgPos: true,
-				overflowY: 'auto',
-				closeBtnInside: true,
-				preloader: false,
-				midClick: true,
-				removalDelay: 300,
-				mainClass: 'my-mfp-zoom-in'
 			});
 
 		});
 	</script>
-	<!-- //popup modal (for location)-->
+	<!-- script for tabs -->
+<!-- disable body scroll which navbar is in active -->
+<script src="assets/js/bootstrap.min.js"></script>
 
-	<!-- cart-js -->
-	<script src="assets/js/minicart.js"></script>
-	<script>
-		paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js
-
-		paypals.minicarts.cart.on('checkout', function (evt) {
-			var items = this.items(),
-				len = items.length,
-				total = 0,
-				i;
-
-			// Count the number of each item in the cart
-			for (i = 0; i < len; i++) {
-				total += items[i].get('quantity');
-			}
-
-			if (total < 3) {
-				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-				evt.preventDefault();
-			}
-		});
-	</script>
-	<!-- //cart-js -->
-
-	<!-- password-script -->
-	<script>
-		window.onload = function () {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
-
-		function validatePassword() {
-			var pass2 = document.getElementById("password2").value;
-			var pass1 = document.getElementById("password1").value;
-			if (pass1 != pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');
-			//empty string means no validation error
-		}
-	</script>
-	<!-- //password-script -->
-	
-	<!-- scroll seller -->
-	<script src="assets/js/scroll.js"></script>
-	<!-- //scroll seller -->
-
-	<!-- smoothscroll -->
-	<script src="assets/js/SmoothScroll.min.js"></script>
-	<!-- //smoothscroll -->
-
-	<!-- start-smooth-scrolling -->
-	<script src="assets/js/move-top.js"></script>
-	<script src="assets/js/easing.js"></script>
-	<script>
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
-
-	<!-- smooth-scrolling-of-move-up -->
-	<script>
-		$(document).ready(function () {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
-
-		});
-	</script>
-	<!-- //smooth-scrolling-of-move-up -->
-
-	<!-- for bootstrap working -->
-	<script src="assets/js/bootstrap.js"></script>
-	<!-- //for bootstrap working -->
-	<!-- //js-files -->
-</body>
-
-</html>
