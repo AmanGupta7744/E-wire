@@ -19,26 +19,26 @@ Author URL: http://w3layouts.com
         <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
         <!-- Template CSS -->
-        
-        
-<!-- Custom-Files -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- Bootstrap css -->
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- Main css -->
-	<link rel="stylesheet" href="css/fontawesome-all.css">
-	<!-- Font-Awesome-Icons-CSS -->
-	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- pop-up-box -->
-	<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- menu style -->
-	<!-- //Custom-Files -->
 
-	<!-- web fonts -->
-	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
-	    rel="stylesheet">
-	<!-- //web fonts -->
+
+        <!-- Custom-Files -->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- Bootstrap css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/fontawesome-all.css">
+        <!-- Font-Awesome-Icons-CSS -->
+        <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- pop-up-box -->
+        <link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- menu style -->
+        <!-- //Custom-Files -->
+
+        <!-- web fonts -->
+        <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+              rel="stylesheet">
+        <!-- //web fonts -->
 
     </head>
     <body>
@@ -76,44 +76,111 @@ Author URL: http://w3layouts.com
                                         </form>
                                     </li>
                                 </ul>
-                                <!--//right-->
-                                <div class="overlay-login text-left">
-                                    <button type="button" class="overlay-close1">
-                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                    </button>
-                                    <div class="wrap">
-                                        <h5 class="text-center mb-4">Login Now</h5>
-                                        <div class="login-bghny p-md-5 p-4 mx-auto mw-100">
-                                            <!--/login-form-->
-                                            <form action="#" method="post">
-                                                <div class="form-group">
-                                                    <p class="login-texthny mb-2">Email address</p>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                           placeholder="" required="">
-                                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
-                                                        with anyone else.</small>
+                                  <!--//login- Register-->
+                            <div class="overlay-login-page overlay-login text-left">
+                                <button type="button" class="login-close overlay-close1">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                                <div class="wrap">
+                                    <h5 class="text-center mb-4">Login Now</h5>
+                                    <div class="login-bghny p-md-5 p-4 mx-auto mw-100">
+                                        <!--/login-form-->
+                                        <form action="#" method="post">
+                                            <div class="form-group">
+                                                <p class="login-texthny mb-2">Email address</p>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                       aria-describedby="emailHelp" placeholder="" required>
+                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                                    with anyone else.</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <p class="login-texthny mb-2">Password</p>
+                                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                                       placeholder="" required>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <div class="userhny-check">
+                                                    <label class="check-remember container">
+                                                        <input type="checkbox" class="form-check"> <span
+                                                            class="checkmark"></span>
+                                                        <p class="privacy-policy">Remember me</p>
+                                                    </label>
+                                                    <div class="clearfix"></div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <p class="login-texthny mb-2">Password</p>
-                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
-                                                </div>
-                                                <div class="form-check mb-2">
-                                                    <div class="userhny-check">
-                                                        <label class="check-remember container">
-                                                            <input type="checkbox" class="form-check"> <span class="checkmark"></span>
-                                                            <p class="privacy-policy">Remember me</p>
-                                                        </label>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                                <button type="submit" class="submit-login btn mb-4">Sign In</button>
+                                            </div>
+                                            <button type="submit" class="submit-login btn mb-4">Sign In</button>
 
-                                            </form>
-                                            <!--//login-form-->
-                                        </div>
-                                        <!---->
-                                    </div>
+
+                                            <p class="page-reg text-center dont-do mt-3">Don't have an account?
+                                                <a href="#" class="text-warning">Register now</a>
+                                            </p>
+                                        </form>
+                                        <!--//login-form-->
+                                    </div> 
+                                    <!---->
                                 </div>
+                            </div>
+
+
+
+
+
+                            <div class="overlay-register-page overlay-login  text-left">
+                                <button type="button" class="register-close overlay-close1">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                                <div class="wrap">
+                                    <h5 class="text-center mb-4">Register</h5>
+                                    <div class="login-bghny p-md-5 p-4 mx-auto mw-100">
+
+                                        <form action="#" method="post">
+                                            <div class="form-group">
+                                                <p class="login-texthny mb-2">Your Name</p>
+                                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                                       aria-describedby="emailHelp" placeholder="" required>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <p class="login-texthny mb-2">Email</p>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                       aria-describedby="emailHelp" placeholder="" required>
+                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                                    with anyone else.</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <p class="login-texthny mb-2">Password</p>
+                                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                                       placeholder="" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <p class="login-texthny mb-2">Confirm Password</p>
+                                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                                       placeholder="" required>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <div class="userhny-check">
+                                                    <label class="check-remember container">
+                                                        <input type="checkbox" class="form-check"> <span
+                                                            class="checkmark"></span>
+                                                        <p class="privacy-policy">show password</p>
+                                                    </label>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="submit-login btn mb-4">Register</button>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>	  
+                            <!--//login- Register-->
+
+
+
+
+
                             </div>
                         </div>
                         <!--/nav-->
@@ -187,4 +254,5 @@ Author URL: http://w3layouts.com
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
