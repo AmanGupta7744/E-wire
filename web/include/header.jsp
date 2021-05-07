@@ -13,22 +13,11 @@ Author URL: http://w3layouts.com
         <title>
             <%= request.getAttribute("title")%>
         </title>
-        <!-- Template CSS -->
         <link rel="stylesheet" href="assets/css/style-starter.css">
-        <!-- Template CSS -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
         <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
-        <!-- Template CSS -->
-
-
-        <!-- Custom-Files -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <!-- Bootstrap css -->
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-        <!-- Main css -->
-
-
-
     </head>
     <body>
         <section class="w3l-banner-slider-main inner-pagehny">
@@ -66,104 +55,8 @@ Author URL: http://w3layouts.com
                                     </li>
                                 </ul>
                                 <!--//login- Register-->
-                                <div class="overlay-login-page overlay-login text-left">
-                                    <button type="button" class="login-close overlay-close1">
-                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                    </button>
-                                    <div class="wrap">
-                                        <h5 class="text-center mb-4">Login Now</h5>
-                                        <div class="login-bghny p-md-5 p-4 mx-auto mw-100">
-                                            <!--/login-form-->
-                                            <form action="#" method="post">
-                                                <div class="form-group">
-                                                    <p class="login-texthny mb-2">Email address</p>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                                           aria-describedby="emailHelp" placeholder="" required>
-                                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
-                                                        with anyone else.</small>
-                                                </div>
-                                                <div class="form-group">
-                                                    <p class="login-texthny mb-2">Password</p>
-                                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                                           placeholder="" required>
-                                                </div>
-                                                <div class="form-check mb-2">
-                                                    <div class="userhny-check">
-                                                        <label class="check-remember container">
-                                                            <input type="checkbox" class="form-check"> <span
-                                                                class="checkmark"></span>
-                                                            <p class="privacy-policy">Remember me</p>
-                                                        </label>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                                <button type="submit" class="submit-login btn mb-4">Sign In</button>
+                                <jsp:include page="login_register.jsp"/>
 
-
-                                                <p class="page-reg text-center dont-do mt-3">Don't have an account?
-                                                    <a href="#" class="text-warning">Register now</a>
-                                                </p>
-                                            </form>
-                                            <!--//login-form-->
-                                        </div> 
-                                        <!---->
-                                    </div>
-                                </div>
-
-
-
-
-
-                                <div class="overlay-register-page overlay-login  text-left">
-                                    <button type="button" class="register-close overlay-close1">
-                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                    </button>
-                                    <div class="wrap">
-                                        <h5 class="text-center mb-4">Register</h5>
-                                        <div class="login-bghny p-md-5 p-4 mx-auto mw-100">
-
-                                            <form action="#" method="post">
-                                                <div class="form-group">
-                                                    <p class="login-texthny mb-2">Your Name</p>
-                                                    <input type="text" class="form-control" id="exampleInputEmail1"
-                                                           aria-describedby="emailHelp" placeholder="" required>
-
-                                                </div>
-                                                <div class="form-group">
-                                                    <p class="login-texthny mb-2">Email</p>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                                           aria-describedby="emailHelp" placeholder="" required>
-                                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
-                                                        with anyone else.</small>
-                                                </div>
-                                                <div class="form-group">
-                                                    <p class="login-texthny mb-2">Password</p>
-                                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                                           placeholder="" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <p class="login-texthny mb-2">Confirm Password</p>
-                                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                                           placeholder="" required>
-                                                </div>
-                                                <div class="form-check mb-2">
-                                                    <div class="userhny-check">
-                                                        <label class="check-remember container">
-                                                            <input type="checkbox" class="form-check"> <span
-                                                                class="checkmark"></span>
-                                                            <p class="privacy-policy">show password</p>
-                                                        </label>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                                <button type="submit" class="submit-login btn mb-4">Register</button>
-
-                                            </form>
-
-                                        </div>
-
-                                    </div>
-                                </div>	  
                                 <!--//login- Register-->
                             </div>
                         </div>
@@ -193,9 +86,9 @@ Author URL: http://w3layouts.com
 
                                         </div>
                                         <a class="close" href="#">×</a>
-                                   
-                                    
-                                    
+
+
+
                                     </div>
                                     <!-- /search popup -->
                                 </div>
@@ -210,7 +103,7 @@ Author URL: http://w3layouts.com
                                         <li class="nav-item">
                                             <a class="nav-link" href="${pageContext.request.contextPath}\home?page=home">Home</a>
                                         </li>
-                                         
+
                                         <li class="nav-item">
                                             <a class="nav-link" href="${pageContext.request.contextPath}\view?page=about">About</a>
                                         </li>
