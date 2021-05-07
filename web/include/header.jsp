@@ -193,6 +193,9 @@ Author URL: http://w3layouts.com
 
                                         </div>
                                         <a class="close" href="#">×</a>
+                                   
+                                    
+                                    
                                     </div>
                                     <!-- /search popup -->
                                 </div>
@@ -207,6 +210,7 @@ Author URL: http://w3layouts.com
                                         <li class="nav-item">
                                             <a class="nav-link" href="${pageContext.request.contextPath}\home?page=home">Home</a>
                                         </li>
+                                         
                                         <li class="nav-item">
                                             <a class="nav-link" href="${pageContext.request.contextPath}\view?page=about">About</a>
                                         </li>

@@ -195,6 +195,9 @@
                                             <a class="nav-link" href="${pageContext.request.contextPath}\home?page=home">Home</a>
                                         </li>
                                         <li class="nav-item">
+                                            <a class="nav-link" href="#Products-display">Products</a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="nav-link" href="${pageContext.request.contextPath}\view?page=about">About</a>
                                         </li>
                                         <li class="nav-item active">
