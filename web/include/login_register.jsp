@@ -6,17 +6,17 @@
         <h5 class="text-center mb-4">Login Now</h5>
         <div class="login-bghny p-md-5 p-4 mx-auto mw-100">
             <!--/login-form-->
-            <form action="#" method="post">
+            <form name="myUserLoginForm" action="Login" method="post" >
                 <div class="form-group">
                     <p class="login-texthny mb-2">Email address</p>
-                    <input type="email" class="form-control" id="exampleInputEmail1"
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
                            aria-describedby="emailHelp" placeholder="" required>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email
                         with anyone else.</small>
                 </div>
                 <div class="form-group">
                     <p class="login-texthny mb-2">Password</p>
-                    <input type="password" class="form-control" id="exampleInputPassword1"
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1"
                            placeholder="" required>
                 </div>
                 <div class="form-check mb-2">

@@ -5,8 +5,8 @@
  */
 package com.mvc.controller;
 
-import com.mvc.beans.RegisterBean;
-import com.mvc.dao.RegisterDao;
+import com.mvc.beans.LoginBean;
+import com.mvc.dao.LoginDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -18,19 +18,21 @@ import javax.servlet.http.HttpServletResponse;
 /**
  *
  * @author jatin
- * jatin vishwakarma
- * jatin@gmail.com
- * jatin2030
  */
-@WebServlet(name = "RegisterController", urlPatterns = {"/Register"})
-public class RegisterController extends HttpServlet {
+@WebServlet(name = "LoginController", urlPatterns = {"/Login"})
+public class LoginController extends HttpServlet {
 
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-    }
-
+    
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    /**
+     * Handles the HTTP <code>GET</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+  
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -43,32 +45,25 @@ public class RegisterController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //Copying all the input parameters in to local variables 
-        String fullName = request.getParameter("Rfullname");
-        String email = request.getParameter("Remail");
-        String password = request.getParameter("Rpassword");
-//        
-//        System.out.println(fullName);
-//        System.out.println(email);
-//        System.out.println(password);
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
         
+        //storing local data into loginBean object
+        LoginBean userlogin =  new LoginBean();
+        //the class encapsulate the data of login form 
+        userlogin.setEmail(email);
+        userlogin.setPassword(password);
+        
+        LoginDao dao = new LoginDao();
+        
+         String authorize =dao.authorizedLogin(userlogin);
 
-        RegisterBean user = new RegisterBean();
-        //Using Java Beans - An easiest way to play with group of related data
-        user.setFullName(fullName);
-        user.setEmail(email);
-        user.setPassword(password);
-
-        RegisterDao registerDao = new RegisterDao();
-
-        //The core Logic of the Registration application is present here. We are going to insert user data in to the database.
-        String userRegistered = registerDao.registerUser(user);
-
-        if (userRegistered.equals("SUCCESS")) //On success, you can display a message to user on Home page
+        if (authorize.equals("SUCCESS")) //On success, you can display a message to user on Home page
         {
             request.getRequestDispatcher("/index.jsp").forward(request, response);
         } else //On Failure, display a meaningful message to the User.
         {
-            request.setAttribute("errMessage", userRegistered);
+            request.setAttribute("errMessage", authorize);
             request.getRequestDispatcher("/error.jsp").forward(request, response);
         }
     }
