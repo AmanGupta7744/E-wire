@@ -14,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -22,7 +23,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "LoginController", urlPatterns = {"/Login"})
 public class LoginController extends HttpServlet {
 
-    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -32,7 +32,6 @@ public class LoginController extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-  
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -47,24 +46,36 @@ public class LoginController extends HttpServlet {
         //Copying all the input parameters in to local variables 
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        
-        //storing local data into loginBean object
-        LoginBean userlogin =  new LoginBean();
-        //the class encapsulate the data of login form 
-        userlogin.setEmail(email);
-        userlogin.setPassword(password);
-        
-        LoginDao dao = new LoginDao();
-        
-         String authorize =dao.authorizedLogin(userlogin);
 
-        if (authorize.equals("SUCCESS")) //On success, you can display a message to user on Home page
+        //storing local data into loginBean object
+        LoginBean user = new LoginBean();
+        //the class encapsulate the data of login form 
+        user.setEmail(email);
+        user.setPassword(password);
+
+        LoginDao dao = new LoginDao();
+        String authorize = dao.authorizedLogin(user);
+
+        HttpSession session = request.getSession();
+
+        if (authorize.equals("SUCCESS LOGIN")) //On success, you can display a message to user on Home page
         {
-            request.getRequestDispatcher("/index.jsp").forward(request, response);
+
+            session.setAttribute("uname", user.getFullName());
+            session.setAttribute("userid", user.getUserid());
+            session.setAttribute("msg", "Login Successfull");
+            
+            System.out.println(user.getFullName());
+            System.out.println(user.getUserid());
+
+            
+            System.out.println(authorize);
+            request.getRequestDispatcher("/about.jsp").forward(request, response);
         } else //On Failure, display a meaningful message to the User.
         {
-            request.setAttribute("errMessage", authorize);
-            request.getRequestDispatcher("/error.jsp").forward(request, response);
+             request.setAttribute("errMessage", authorize);
+            request.getRequestDispatcher("/index.jsp").forward(request, response);
+            System.out.println(authorize);
         }
     }
 

@@ -14,13 +14,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author jatin
- * jatin vishwakarma
- * jatin@gmail.com
- * jatin2030
+ * @author jatin jatin vishwakarma jatin@gmail.com jatin2030
  */
 @WebServlet(name = "RegisterController", urlPatterns = {"/Register"})
 public class RegisterController extends HttpServlet {
@@ -50,7 +48,6 @@ public class RegisterController extends HttpServlet {
 //        System.out.println(fullName);
 //        System.out.println(email);
 //        System.out.println(password);
-        
 
         RegisterBean user = new RegisterBean();
         //Using Java Beans - An easiest way to play with group of related data
@@ -62,14 +59,21 @@ public class RegisterController extends HttpServlet {
 
         //The core Logic of the Registration application is present here. We are going to insert user data in to the database.
         String userRegistered = registerDao.registerUser(user);
-
+        HttpSession session = request.getSession();
         if (userRegistered.equals("SUCCESS")) //On success, you can display a message to user on Home page
         {
-            request.getRequestDispatcher("/index.jsp").forward(request, response);
+           
+
+            session.setAttribute("uname", user.getFullName());
+            session.setAttribute("userid", user.getUserid());
+            System.out.println(user.getUserid());
+            session.setAttribute("msg", "Registration Successfully");
+
+            request.getRequestDispatcher("/about.jsp").forward(request, response);
         } else //On Failure, display a meaningful message to the User.
         {
             request.setAttribute("errMessage", userRegistered);
-            request.getRequestDispatcher("/error.jsp").forward(request, response);
+            request.getRequestDispatcher("/index.jsp").forward(request, response);
         }
     }
 

@@ -20,15 +20,14 @@ import java.util.logging.Logger;
  */
 public class LoginDao {
 
-    public String authorizedLogin(LoginBean userlogin) {
+    public String authorizedLogin(LoginBean user) {
         Connection con = null;
         PreparedStatement pst = null;
         ResultSet rs = null;
-        String email = userlogin.getEmail();
-        String password = userlogin.getPassword();
+        String email = user.getEmail();
+        String password = user.getPassword();
         con = DBUtils.connect();//getting connection 
         String query = "select * from users where email=? and password=?";
-       
 
         try {
             pst = con.prepareStatement(query);
@@ -37,14 +36,16 @@ public class LoginDao {
             rs = pst.executeQuery();
 
             if (rs.next()) {
-               return "";
+                user.setUserid(rs.getInt(1));
+                user.setFullName(rs.getString(2));
+                return "SUCCESS LOGIN";
             }
 
         } catch (SQLException ex) {
             Logger.getLogger(LoginDao.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        return null;
+        return "WRONG USERNAME AND PASSWORD";
     }
 
 }

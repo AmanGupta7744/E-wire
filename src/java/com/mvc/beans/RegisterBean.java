@@ -10,10 +10,20 @@ package com.mvc.beans;
  * @author jatin
  */
 public class RegisterBean {
- private String fullName;
- private String email;
- private String userName;
-  private String password;
+
+    private int userid;
+    private String fullName;
+    private String email;
+    private String userName;
+    private String password;
+
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
 
     public String getFullName() {
         return fullName;

@@ -10,6 +10,24 @@ package com.mvc.beans;
  * @author jatin
  */
 public class LoginBean {
+    int userid;
+    private String fullName;
+
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
     private String email,password;
 
     public String getEmail() {

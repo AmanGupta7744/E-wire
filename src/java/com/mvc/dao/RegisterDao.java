@@ -9,6 +9,7 @@ import com.java.ConPool.DBUtils;
 import com.mvc.beans.RegisterBean;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,24 +20,37 @@ import java.util.logging.Logger;
  */
 public class RegisterDao {
 
-    Connection con;
-    PreparedStatement pst;
-
     public String registerUser(RegisterBean user) {
         int i = 0;
+        Connection con = null;
+        PreparedStatement pst = null;
+
         String fullName = user.getFullName();
         String email = user.getEmail();
         String password = user.getPassword();
         con = DBUtils.connect();
-        String query = "insert into users(fullName,Email,Password) values (?,?,?)";
+        String query1 = "insert into users(fullName,Email,Password) values (?,?,?)";
+        String query2 = "select (userid) from users where fullname=? and email=?";
         try {
             //Insert user details into the table 'USERS'
-            pst = con.prepareStatement(query);
+            pst = con.prepareStatement(query1);
             pst.setString(1, fullName);
             pst.setString(2, email);
             pst.setString(3, password);
             i = pst.executeUpdate();
 
+        } catch (SQLException ex) {
+            Logger.getLogger(RegisterDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        //another ps objects to get userid
+        try {
+            pst = con.prepareStatement(query2);
+            pst.setString(1, fullName);
+            pst.setString(2, email);
+            ResultSet rs = pst.executeQuery();
+            if (rs.next()) {
+                user.setUserid(rs.getInt(1));//getting db userid and setting to user object userid
+            }
         } catch (SQLException ex) {
             Logger.getLogger(RegisterDao.class.getName()).log(Level.SEVERE, null, ex);
         }
