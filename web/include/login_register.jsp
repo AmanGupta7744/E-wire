@@ -54,7 +54,7 @@
         <h5 class="text-center mb-4">Register</h5>
         <div class="login-bghny p-md-5 p-4 mx-auto mw-100">
 
-            <form name="myUserRegisterForm" action="#" onsubmit="return validateUser()" method="post" >
+            <form name="myUserRegisterForm" action="Register" onsubmit="return validateUser()" method="post" >
                 <div class="form-group">
                     <p class="login-texthny mb-2">Your Name</p>
                     <input type="text" name="Rfullname" class="form-control" id="exampleInputEmail1"
