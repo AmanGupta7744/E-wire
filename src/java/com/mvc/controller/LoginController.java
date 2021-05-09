@@ -5,7 +5,7 @@
  */
 package com.mvc.controller;
 
-import com.mvc.beans.LoginBean;
+import com.mvc.beans.UserBean;
 import com.mvc.dao.LoginDao;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -48,7 +48,7 @@ public class LoginController extends HttpServlet {
         String password = request.getParameter("password");
 
         //storing local data into loginBean object
-        LoginBean user = new LoginBean();
+        UserBean user = new UserBean();
         //the class encapsulate the data of login form 
         user.setEmail(email);
         user.setPassword(password);

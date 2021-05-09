@@ -5,7 +5,8 @@
  */
 package com.mvc.controller;
 
-import com.mvc.beans.RegisterBean;
+
+import com.mvc.beans.UserBean;
 import com.mvc.dao.RegisterDao;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -49,7 +50,7 @@ public class RegisterController extends HttpServlet {
 //        System.out.println(email);
 //        System.out.println(password);
 
-        RegisterBean user = new RegisterBean();
+        UserBean user = new UserBean();
         //Using Java Beans - An easiest way to play with group of related data
         user.setFullName(fullName);
         user.setEmail(email);

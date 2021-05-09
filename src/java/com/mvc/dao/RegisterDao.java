@@ -6,7 +6,7 @@
 package com.mvc.dao;
 
 import com.java.ConPool.DBUtils;
-import com.mvc.beans.RegisterBean;
+import com.mvc.beans.UserBean;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -20,7 +20,7 @@ import java.util.logging.Logger;
  */
 public class RegisterDao {
 
-    public String registerUser(RegisterBean user) {
+    public String registerUser(UserBean user) {
         int i = 0;
         Connection con = null;
         PreparedStatement pst = null;
