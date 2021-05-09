@@ -11,25 +11,35 @@
         <jsp:include page="include/css_js.jsp"/>
     </head>
     <body>
+
         <%
             response.setHeader("Cache-Control", "no-cache");
             response.setHeader("Cache-Control", "no-store");
             response.setHeader("Pragma", "no-cache");
             response.setDateHeader("Expires", 0);
         %>
+
         <!--w3l-banner-slider-main-->
         <section class="w3l-banner-slider-main">
             <div class="top-header-content">
                 <header class="tophny-header">
                     <div class="container-fluid">
-
                         <div class="top-right-strip row">
                             <!--/left-->
+
+                            <!--    if user registered or login ,show username on screen-->
+                            <%
+                                if (session.getAttribute("userid") != null) {
+                            %>
                             <div class="top-hny-left-content col-lg-6 pl-lg-0">
-                                <h6>Upto 70% off on All styles , <a href="#" target="_blank"> Click here for <span
+                                
+                                <h6 class=" text-lowercase lead"> <a href="#" target="_blank">Welcome, <%= session.getAttribute("uname")%> Click here for <span
                                             class="fa fa-hand-o-right hand-icon" aria-hidden="true"></span> <span
                                             class="hignlaite">More details</span></a></h6>
                             </div>
+                            <% }%>
+                            <!--    if user registered or login ,show username on screen-->
+
                             <!--//left-->
                             <!--/right-->
                             <ul class="top-hnt-right-content col-lg-6">
@@ -52,7 +62,6 @@
                             </ul>
                             <!--//login- Register-->
                             <jsp:include page="include/login_register.jsp"/>
-
                         </div>
                     </div>	
 
@@ -61,21 +70,13 @@
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid serarc-fluid">
                             <a class="navbar-brand" href="${pageContext.request.contextPath}\home?page=home">
-                                Hari<span class="lohny">Om</span>
-                                <%
-                                    if (session.getAttribute("uname") != null) {
-                                %>
-                                <%= session.getAttribute("uname")%>
-
-                                <%
-                                    }
-                                %>
-                            </a>
+                                Hari<span class="lohny">Om</span></a>
                             <!-- if logo is image enable this   
                                             <a class="navbar-brand" href="#index.html">
                                                     <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
                                             </a> -->
                             <!--/search-right-->
+
                             <div class="search-right">
 
                                 <a href="#search" title="search"><span class="fa fa-search mr-2" aria-hidden="true"></span>
@@ -95,6 +96,7 @@
                                 </div>
                                 <!-- /search popup -->
                             </div>
+                            <!--//search-right-->
                             <!--//search-right-->
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -124,7 +126,6 @@
                         </div>
                     </nav>
                     <!--//nav-->
-
                     <!--                    if user registered display success mesage-->
                     <%
                         if (session.getAttribute("message") != null) {
@@ -149,7 +150,6 @@
                     %>                    
                     <!--             //       if user registered display success mesage-->
                 </header>
-
             </div>
             <div class="bannerhny-content">
 

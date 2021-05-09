@@ -14,8 +14,6 @@ Author URL: http://w3layouts.com
             <%= request.getAttribute("title")%>
         </title>
         <link rel="stylesheet" href="assets/css/style-starter.css">
-        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
         <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
     </head>
@@ -29,11 +27,18 @@ Author URL: http://w3layouts.com
                         <div class="container-fluid">
                             <div class="top-right-strip row">
                                 <!--/left-->
+                                <!--    if user registered or login ,show username on screen-->
+                                <%
+                                    if (session.getAttribute("userid") != null) {
+                                %>
                                 <div class="top-hny-left-content col-lg-6 pl-lg-0">
-                                    <h6>Upto 30% off on All styles , <a href="#" target="_blank"> Click here for <span
-                                                class="fa fa-hand-o-right hand-icon" aria-hidden="true"></span> <span class="hignlaite">More
-                                                details</span></a></h6>
+                                    <h6 class="">Welcome, <%= session.getAttribute("uname")%> <a href="#" target="_blank"> Click here for <span
+                                                class="fa fa-hand-o-right hand-icon" aria-hidden="true"></span> <span
+                                                class="hignlaite">More details</span></a></h6>
                                 </div>
+                                <% }%>
+                                <!--    if user registered or login ,show username on screen-->
+
                                 <!--//left-->
                                 <!--/right-->
                                 <ul class="top-hnt-right-content col-lg-6">
