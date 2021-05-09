@@ -68,16 +68,16 @@ public class LoginController extends HttpServlet {
             System.out.println(user.getFullName());
             System.out.println(user.getUserid());
 
-            
-            System.out.println(authorize);
-            request.getRequestDispatcher("/about.jsp").forward(request, response);
+             session.setAttribute("message", "Registration Successfull!");
+
+            response.sendRedirect("index.jsp");
         } else //On Failure, display a meaningful message to the User.
         {
-             request.setAttribute("errMessage", authorize);
-            request.getRequestDispatcher("/index.jsp").forward(request, response);
-            System.out.println(authorize);
+            request.setAttribute("errMessage", authorize);
+            response.sendRedirect("index.jsp");
         }
     }
+    
 
     /**
      * Returns a short description of the servlet.

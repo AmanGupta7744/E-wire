@@ -5,7 +5,6 @@
  */
 package com.mvc.controller;
 
-
 import com.mvc.beans.UserBean;
 import com.mvc.dao.RegisterDao;
 import java.io.IOException;
@@ -63,18 +62,17 @@ public class RegisterController extends HttpServlet {
         HttpSession session = request.getSession();
         if (userRegistered.equals("SUCCESS")) //On success, you can display a message to user on Home page
         {
-           
 
             session.setAttribute("uname", user.getFullName());
             session.setAttribute("userid", user.getUserid());
             System.out.println(user.getUserid());
-            session.setAttribute("msg", "Registration Successfully");
+            session.setAttribute("message", userRegistered);
 
-            request.getRequestDispatcher("/about.jsp").forward(request, response);
+            response.sendRedirect("index.jsp");
         } else //On Failure, display a meaningful message to the User.
         {
             request.setAttribute("errMessage", userRegistered);
-            request.getRequestDispatcher("/index.jsp").forward(request, response);
+            response.sendRedirect("index.jsp");
         }
     }
 

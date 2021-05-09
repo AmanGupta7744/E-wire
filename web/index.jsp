@@ -11,12 +11,18 @@
         <jsp:include page="include/css_js.jsp"/>
     </head>
     <body>
-
+        <%
+            response.setHeader("Cache-Control", "no-cache");
+            response.setHeader("Cache-Control", "no-store");
+            response.setHeader("Pragma", "no-cache");
+            response.setDateHeader("Expires", 0);
+        %>
         <!--w3l-banner-slider-main-->
         <section class="w3l-banner-slider-main">
             <div class="top-header-content">
                 <header class="tophny-header">
                     <div class="container-fluid">
+
                         <div class="top-right-strip row">
                             <!--/left-->
                             <div class="top-hny-left-content col-lg-6 pl-lg-0">
@@ -46,6 +52,7 @@
                             </ul>
                             <!--//login- Register-->
                             <jsp:include page="include/login_register.jsp"/>
+
                         </div>
                     </div>	
 
@@ -54,7 +61,16 @@
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid serarc-fluid">
                             <a class="navbar-brand" href="${pageContext.request.contextPath}\home?page=home">
-                                Hari<span class="lohny">Om</span></a>
+                                Hari<span class="lohny">Om</span>
+                                <%
+                                    if (session.getAttribute("uname") != null) {
+                                %>
+                                <%= session.getAttribute("uname")%>
+
+                                <%
+                                    }
+                                %>
+                            </a>
                             <!-- if logo is image enable this   
                                             <a class="navbar-brand" href="#index.html">
                                                     <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -108,8 +124,32 @@
                         </div>
                     </nav>
                     <!--//nav-->
-                    <!--//nav-->
+
+                    <!--                    if user registered display success mesage-->
+                    <%
+                        if (session.getAttribute("message") != null) {
+                    %>  
+                    <div class="row" id="register-alert">
+                        <div class="col-sm-5 mx-auto">
+                            <div id="success-alert" class=" alert alert-success alert-dismissible fade show" role="alert">
+                                <strong>User!</strong> Registered                               
+                            </div>
+                        </div>
+                    </div>
+                    <!--registeratin message-->
+                    <script>
+                        $(document).ready(function () {
+                            $("#success-alert").fadeOut(2000);
+
+                        });
+                    </script>
+                    <%
+                            session.removeAttribute("message");
+                        }
+                    %>                    
+                    <!--             //       if user registered display success mesage-->
                 </header>
+
             </div>
             <div class="bannerhny-content">
 

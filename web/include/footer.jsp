@@ -122,54 +122,73 @@
 
 </html>
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/jquery-2.1.4.min.js"></script>
+
 <!--login-register-->
+
 <script>
-          var openLogin = false;
-          var openRegister = false;
-          $(document).ready(function () {
-              $(".button-log a").click(function () {
-                   if (!openLogin) {
-                      $(".overlay-login-page").fadeIn(200);
-                      $(this).toggleClass('btn-open').toggleClass('btn-close');
-                      openLogin = true;
-                      
-                } else if (openLogin) {
-                      $(".overlay-login-page").fadeOut(200);
-                      $(this).toggleClass('btn-open').toggleClass('btn-close');
-                      openLogin = false;
-                      
-                }
-                
-                  if (openLogin && openRegister) {
-                      $(".overlay-login-page").fadeOut(200);
-                      $(".overlay-register-page").fadeOut(200);
-
-                      $(this).toggleClass('btn-open').toggleClass('btn-close');
-                      openLogin = false;
-                      openRegister = false;
-                  }
-              });
-
-          });
-
-          $(".page-reg a").click(function () {
-              $(".overlay-login-page").fadeToggle(200);
-              openLogin = false;
-              $(".overlay-register-page").fadeToggle(200);
-              openRegister = true;
-          });
-
-          $('.overlay-close1').on('click', function () {
-              $(".overlay-register-page").fadeOut(200);
-              $(".overlay-login-page").fadeOut(200);
-              $(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
- openLogin = false;
-                      openRegister = false;
-                  });
+//        function test() {
+//            alert("happens");
+//            document.getElementById("register-alert").hide();
+//        }
 
 </script>
+
+<script>
+//    test(); //No need to put java script code inside scriptlet
+</script>
+
+<script>
+    var openLogin = false;
+    var openRegister = false;
+    $(document).ready(function () {
+
+
+
+
+        $(".button-log a").click(function () {
+
+            if (!openLogin) {
+                $(".overlay-login-page").fadeIn(200);
+                $(this).toggleClass('btn-open').toggleClass('btn-close');
+                openLogin = true;
+
+            } else if (openLogin) {
+                $(".overlay-login-page").fadeOut(200);
+                $(this).toggleClass('btn-open').toggleClass('btn-close');
+                openLogin = false;
+
+            }
+
+            if (openLogin && openRegister) {
+                $(".overlay-login-page").fadeOut(200);
+                $(".overlay-register-page").fadeOut(200);
+
+                $(this).toggleClass('btn-open').toggleClass('btn-close');
+                openLogin = false;
+                openRegister = false;
+            }
+        });
+
+    });
+
+    $(".page-reg a").click(function () {
+        $(".overlay-login-page").fadeToggle(200);
+        openLogin = false;
+        $(".overlay-register-page").fadeToggle(200);
+        openRegister = true;
+    });
+
+    $('.overlay-close1').on('click', function () {
+        $(".overlay-register-page").fadeOut(200);
+        $(".overlay-login-page").fadeOut(200);
+        $(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+        openLogin = false;
+        openRegister = false;
+    });
+
+</script>
+
+
 <!--login-register-->
 <script>
 // optional
