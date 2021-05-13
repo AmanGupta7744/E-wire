@@ -14,6 +14,23 @@ public class UserBean {
     private String fullName;
     private String email;
     private String password;
+    
+    public UserBean(){
+         //no argument constructor??
+     }
+
+    public UserBean(String fullName, String email, String password) {
+        this.fullName = fullName;
+        this.email = email;
+        this.password = password;
+    }
+
+    public UserBean(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
+   
 
     public int getUserid() {
         return userid;

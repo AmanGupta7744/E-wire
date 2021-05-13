@@ -26,106 +26,27 @@ Author URL: http://w3layouts.com
                     <header class="tophny-header">
                         <div class="container-fluid">
                             <div class="top-right-strip row">
-                                <!--/left-->
-                                <!--    if user registered or login ,show username on screen-->
-                                <%
-                                    if (session.getAttribute("userid") != null) {
-                                %>
-                                <div class="top-hny-left-content col-lg-6 pl-lg-0">
-                                    <h6 class="">Welcome, <%= session.getAttribute("uname")%> <a href="#" target="_blank"> Click here for <span
-                                                class="fa fa-hand-o-right hand-icon" aria-hidden="true"></span> <span
-                                                class="hignlaite">More details</span></a></h6>
-                                </div>
-                                <% }%>
-                                <!--    if user registered or login ,show username on screen-->
 
-                                <!--//left-->
-                                <!--/right-->
-                                <ul class="top-hnt-right-content col-lg-6">
+                                <!--/top-left-->
+                                <!--    if user registered or login ,show username on screen-->
+                                <jsp:include page="include/showUserName.jsp"/>
+                                <!--    if user registered or login ,show username on screen-->
+                                <!--//top-left-->
 
-                                    <li class="button-log usernhy">
-                                        <a class="btn-open" href="#">
-                                            <span class="fa fa-user" aria-hidden="true"></span>
-                                        </a>
-                                    </li>
-                                    <li class="transmitvcart galssescart2 cart cart box_1">
-                                        <form action="#" method="post" class="last">
-                                            <input type="hidden" name="cmd" value="_cart">
-                                            <input type="hidden" name="display" value="1">
-                                            <button class="top_transmitv_cart" type="submit" name="submit" value="">
-                                                My Cart
-                                                <span class="fa fa-shopping-cart"></span>
-                                            </button>
-                                        </form>
-                                    </li>
-                                </ul>
-                                <!--//login- Register-->
+                                <!--/top-right-->
+                                <!--  including user login & logout icon-->
+                                <jsp:include page="include/user_icon.jsp"/>
+                                <!--  including user login & logout icon-->
+                                <!--/top-right-->
+                                
+                                <!--//Including ogin- Register model here-->
                                 <jsp:include page="login_register.jsp"/>
-
-                                <!--//login- Register-->
+                                <!--//Including ogin- Register model here-->
                             </div>
                         </div>
-                        <!--/nav-->
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <div class="container-fluid serarc-fluid">
-                                <a class="navbar-brand" href="index.jsp">
-                                    Hari<span class="lohny">Om</span></a>
-                                <!-- if logo is image enable this   
-                                                <a class="navbar-brand" href="#index.html">
-                                                        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-                                                </a> -->
-                                <!--/search-right-->
-                                <div class="search-right">
-
-                                    <a href="#search" title="search"><span class="fa fa-search mr-2" aria-hidden="true"></span>
-                                        <span class="search-text">Search here</span></a>
-                                    <!-- search popup -->
-                                    <div id="search" class="pop-overlay">
-                                        <div class="popup">
-
-                                            <form action="#" method="post" class="search-box">
-                                                <input type="search" placeholder="Keyword" name="search" required="required"
-                                                       autofocus="">
-                                                <button type="submit" class="btn">Search</button>
-                                            </form>
-
-                                        </div>
-                                        <a class="close" href="#">×</a>
-
-
-
-                                    </div>
-                                    <!-- /search popup -->
-                                </div>
-                                <!--//search-right-->
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon fa fa-bars"> </span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="${pageContext.request.contextPath}\home?page=home">Home</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="${pageContext.request.contextPath}\view?page=about">About</a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="${pageContext.request.contextPath}\view?page=contact">Contact</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="${pageContext.request.contextPath}\view?page=faq">Faq's</a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </nav>
-                        <!--//nav-->
-
-
+                        <!--include navigation bar here-->
+                        <jsp:include page="navbar.jsp"/>
+                        <!--include navigation bar here-->
                     </header>
                     <div class="breadcrumb-contentnhy">
                         <div class="container">

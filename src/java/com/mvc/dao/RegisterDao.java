@@ -56,7 +56,7 @@ public class RegisterDao {
         }
         if (i != 0) //Just to ensure data has been inserted into the database
         {
-            return "SUCCESS";
+            return "REGISTRATION SUCCESSFUL!";
         }
         return "Oops.. Something went wrong there..!";
     }
