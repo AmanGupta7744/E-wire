@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Hari Om Electricals</title>
         <!-- Template CSS -->
-        <link href='https://fonts.googleapis.com/css?family=Comic Neue' rel='stylesheet'>
         <jsp:include page="include/css_js.jsp"/>
     </head>
     <body>
@@ -23,6 +22,7 @@
 
         <!--w3l-banner-slider-main-->
         <section class="w3l-banner-slider-main">
+           
             <div class="top-header-content">
                 <header class="tophny-header">
                     <div class="container-fluid">
@@ -54,12 +54,11 @@
                     <!-- include login register message here-->
                     <jsp:include page="include/message.jsp"/>
                     <!-- include login register message here-->
-
-
+                
                 </header>
             </div>
+                    
             <div class="bannerhny-content">
-
                 <!--/banner-slider-->
                 <div class="content-baner-inf">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

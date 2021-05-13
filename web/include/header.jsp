@@ -13,9 +13,7 @@ Author URL: http://w3layouts.com
         <title>
             <%= request.getAttribute("title")%>
         </title>
-        <link rel="stylesheet" href="assets/css/style-starter.css">
-        <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
-        <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
+        <jsp:include page="css_js.jsp"/>
     </head>
     <body>
         <section class="w3l-banner-slider-main inner-pagehny">
@@ -29,13 +27,13 @@ Author URL: http://w3layouts.com
 
                                 <!--/top-left-->
                                 <!--    if user registered or login ,show username on screen-->
-                                <jsp:include page="include/showUserName.jsp"/>
+                                <jsp:include page="showUserName.jsp"/>
                                 <!--    if user registered or login ,show username on screen-->
                                 <!--//top-left-->
 
                                 <!--/top-right-->
                                 <!--  including user login & logout icon-->
-                                <jsp:include page="include/user_icon.jsp"/>
+                                <jsp:include page="user_icon.jsp"/>
                                 <!--  including user login & logout icon-->
                                 <!--/top-right-->
                                 
