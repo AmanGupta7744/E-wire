@@ -38,22 +38,15 @@
                         </label>
                         <div class="clearfix"></div>
                     </div>
-                </div><% %>
+                </div><%%>
                 <input type="hidden" name="operation" value="login"/>
-                    <p class="login-texthny mb-2">
-                        <%=(request.getAttribute("errMessage") == null) ? "login here"
-                    : request.getAttribute("errMessage")%>
-                    </p>
-
                 <button type="submit" class="submit-login btn mb-4">Sign In</button>
-
-
                 <p class="page-reg text-center dont-do mt-3">Don't have an account?
                     <a href="#" class="text-warning">Register now</a>
                 </p>
             </form>
             <!--//login-form-->
-        </div> 
+        </div>
         <!---->
     </div>
 </div>
@@ -124,7 +117,7 @@
         </div>
 
     </div>
-</div>	  
+</div>
 <script>
     $(document).ready(function () {
 

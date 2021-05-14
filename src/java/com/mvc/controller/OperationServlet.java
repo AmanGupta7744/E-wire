@@ -115,11 +115,20 @@ public class OperationServlet extends HttpServlet {
             session.setAttribute("uname", user.getFullName());
             session.setAttribute("userid", user.getUserid());
             request.setAttribute("message", authorize);
-            try {
-                request.getRequestDispatcher("index.jsp").forward(request, response);
-            } catch (IOException | ServletException ex) {
-                Logger.getLogger(OperationServlet.class.getName()).log(Level.SEVERE, null, ex);
+            if (user.getRole().equals("customer")) {
+                try {
+                    request.getRequestDispatcher("index.jsp").forward(request, response);
+                } catch (IOException | ServletException ex) {
+                    Logger.getLogger(OperationServlet.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }else{
+                 try {
+                    request.getRequestDispatcher("admin.jsp").forward(request, response);
+                } catch (IOException | ServletException ex) {
+                    Logger.getLogger(OperationServlet.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
+
         } else //On Failure, display a meaningful message to the User.
         {
             request.setAttribute("errMessage", authorize);

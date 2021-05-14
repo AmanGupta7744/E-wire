@@ -40,6 +40,7 @@ public class LoginDao {
             if (rs.next()) {
                 user.setUserid(rs.getInt(1));
                 user.setFullName(rs.getString(2));
+                user.setRole(rs.getString(5));
                 return "SUCCESS LOGIN";
             }
 

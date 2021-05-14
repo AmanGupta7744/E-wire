@@ -208,13 +208,3 @@
     });
 </script>
 
-
-
-<!-- script for tabs -->
-<!-- disable body scroll which navbar is in active -->
- <script src="assets/js/jquery-3.3.1.min.js"></script>
-        <script src="assets/js/jquery-2.1.4.min.js"></script>
-        <script src="assets/js/jquery.magnific-popup.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-
-
