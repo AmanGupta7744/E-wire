@@ -1,6 +1,6 @@
 function validateUser()
 {
-    alert("validating");
+
     var fullname = document.forms["myUserRegisterForm"]["fullname"].value;
     var email = document.forms["myUserRegisterForm"]["email"].value;
     var password = document.forms["myUserRegisterForm"]["password"].value;

@@ -13,11 +13,11 @@
     <body>
 
         <%
-            response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");
+//            response.setHeader("Cache-Control", "no-cache");
+//            response.setHeader("Cache-Control", "no-store");
 //            response.setHeader("Pragma", "no-cache");
 //            response.setDateHeader("Expires", 0);
-
-        %>
+        %> 
 
         <!--w3l-banner-slider-main-->
         <section class="w3l-banner-slider-main">
@@ -45,64 +45,9 @@
                         </div>
                     </div>	
 
-
+                    <!--/search-right-->
                     <!--include navigation bar here-->
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <div class="container-fluid serarc-fluid">
-                            <a class="navbar-brand" href="${pageContext.request.contextPath}\home?page=home">
-                                Hari<span class="lohny">Om</span></a>
-                            <!-- if logo is image enable this   
-                                            <a class="navbar-brand" href="#index.html">
-                                                    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-                                            </a> -->
-                            <!--/search-right-->
-
-                            <div class="search-right">
-
-                                <a href="#search" title="search"><span class="fa fa-search mr-2" aria-hidden="true"></span>
-                                    <span class="search-text">Search here</span></a>
-                                <!-- search popup -->
-                                <div id="search" class="pop-overlay">
-                                    <div class="popup">
-
-                                        <form action="#" method="post" class="search-box">
-                                            <input type="search" placeholder="Keyword" name="search" required="required"
-                                                   autofocus="">
-                                            <button type="submit" class="btn">Search</button>
-                                        </form>
-
-                                    </div>
-                                    <a class="close" href="#">×</a>
-                                </div>
-                                <!-- /search popup -->
-                            </div>
-                            <!--//search-right-->
-                            <!--//search-right-->
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon fa fa-bars"> </span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="${pageContext.request.contextPath}\home?page=home">Home</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="${pageContext.request.contextPath}\view?page=about">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="${pageContext.request.contextPath}\view?page=contact">Contact</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="${pageContext.request.contextPath}\view?page=faq">Faq's</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </nav>
+                    <jsp:include page="include/navbar.jsp"/>       
                     <!--include navigation bar here-->
 
                     <!-- include login register message here-->
@@ -213,41 +158,41 @@
                     <div class="welcome-grids row mt-5">
                         <div class="col-lg-2 col-md-4 col-6 welcome-image">
                             <div class="boxhny13">
-                                <a href="#URL">
+                                <a href="Multi Strand.html">
                                     <img src="assets/images/grid1.jpg" class="img-fluid" alt="" />
                                     <div class="boxhny-content">
                                         <h3 class="title">Product
                                     </div>
                                 </a>
                             </div>
-                            <h4><a href="#URL">Multi Strand Copper</a></h4>
+                            <h4><a href="Multi Strand.html">Multi Strand Copper</a></h4>
 
                         </div>
 
                         <div class="col-lg-2 col-md-4 col-6 welcome-image">
                             <div class="boxhny13">
-                                <a href="#URL">
+                                <a href="Industrial Round Cable Copper.html">
                                     <img src="assets/images/grid3.jpg" class="img-fluid" alt="" />
                                     <div class="boxhny-content">
                                         <h3 class="title">Product</h3>
                                     </div>
                                 </a>
                             </div>
-                            <h4><a href="#URL">
+                            <h4><a href="Industrial Round Cable Copper.html">
                                     Industrial Round Cable Copper</a></h4>
 
 
                         </div>
                         <div class="col-lg-2 col-md-4 col-6 welcome-image">
                             <div class="boxhny13">
-                                <a href="#URL">
+                                <a href="Submersible Wire Copper.html">
                                     <img src="assets/images/grid2.jpg" class="img-fluid" alt="" />
                                     <div class="boxhny-content">
                                         <h3 class="title">Product</h3>
                                     </div>
                                 </a>
                             </div>
-                            <h4><a href="#URL">Submersible Wire Copper</a></h4>
+                            <h4><a href="Submersible Wire Copper.html">Submersible Wire Copper</a></h4>
 
 
                         </div>

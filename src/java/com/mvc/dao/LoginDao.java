@@ -20,15 +20,16 @@ import java.util.logging.Logger;
  */
 public class LoginDao {
 
-    public String authorizedLogin(UserBean user) {
-        System.out.println("Inside login dao");
+    public String authorizedLogin(UserBean user)  {
+      //  System.out.println("Inside login dao");
         Connection con = null;
         PreparedStatement pst = null;
         ResultSet rs = null;
         String email = user.getEmail();
         String password = user.getPassword();
-        System.out.println(email+"..."+password);
+       // System.out.println(email+"..."+password);
         con = DBUtils.connect();//getting connection 
+       
         String query = "select * from users where email=? and password=?";
 
         try {
@@ -36,7 +37,7 @@ public class LoginDao {
             pst.setString(1, email);
             pst.setString(2, password);
             rs = pst.executeQuery();
-   System.out.println("query executed");
+  // System.out.println("query executed");
             if (rs.next()) {
                 user.setUserid(rs.getInt(1));
                 user.setFullName(rs.getString(2));

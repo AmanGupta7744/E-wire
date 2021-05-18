@@ -108,6 +108,7 @@ public class OperationServlet extends HttpServlet {
         String authorize = new LoginDao().authorizedLogin(user);
         System.out.println(authorize);
         HttpSession session = request.getSession();
+       
 
         if (authorize.equals("SUCCESS LOGIN")) //On success, you can display a message to user on Home page
         {
@@ -115,16 +116,22 @@ public class OperationServlet extends HttpServlet {
             session.setAttribute("uname", user.getFullName());
             session.setAttribute("userid", user.getUserid());
             request.setAttribute("message", authorize);
-            if (user.getRole().equals("customer")) {
+            if (user.getRole().equalsIgnoreCase("customer")) {
                 try {
-                    request.getRequestDispatcher("index.jsp").forward(request, response);
-                } catch (IOException | ServletException ex) {
+                    try {
+                        request.getRequestDispatcher("index.jsp").forward(request, response);
+                        //   response.sendRedirect("mainPage.jsp");
+                    } catch (ServletException ex) {
+                        Logger.getLogger(OperationServlet.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                } catch (IOException ex) {
                     Logger.getLogger(OperationServlet.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }else{
                  try {
-                    request.getRequestDispatcher("admin.jsp").forward(request, response);
-                } catch (IOException | ServletException ex) {
+                  
+                    response.sendRedirect("adminPage.jsp");
+                } catch (IOException ex) {
                     Logger.getLogger(OperationServlet.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -141,7 +148,7 @@ public class OperationServlet extends HttpServlet {
     }
 
     private void logout(HttpServletRequest request, HttpServletResponse response) {
-        response.setContentType("text/html;charset=UTF-8");
+        //response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         session.invalidate();
         try {
